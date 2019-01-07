@@ -9,5 +9,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Humanクラスのインスタンス生成
+        Human human = new Human("任意の名前", "任意の趣味", 0);
+
+        human.say();
+        human.think();
     }
 }
